@@ -1,4 +1,4 @@
-select c.Name as CourseName, a.Name as AchivementTypeName
+select c.Name as CourseName,a.Name as AchievmentTypeName
 from dbo.Course c
 cross join dbo.AchievementType a
 GO
@@ -13,4 +13,4 @@ select t.*
 from dbo.Teacher t
 left join
 dbo.Grade g on g.TeacherID = t.ID
-where g.TeacherID = null
+where g.TeacherID is null
