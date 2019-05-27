@@ -2,8 +2,8 @@ DECLARE @FirstName NVARCHAR(50)
 SET @FirstName = 'Antonio'
 
 
-SELECT @FirstName AS FIRSTNAME,LastName
-FROM [Student]
+SELECT FIRSTNAME,LastName
+FROM [Student] WHERE FirstName = @FirstName
 GO
 
 DECLARE @MyTable TABLE
